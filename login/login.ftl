@@ -32,7 +32,7 @@
                 <form id="kc-form-login" onsubmit="return true;" action="${url.loginAction}" method="post">
                     <div class="form-group">
                         <label for="username">${msg("usernameOrEmail","E-mail")}</label>
-                        <input tabindex="1" id="username" class="form-control" name="username" value="${(login.username!'')?html}" type="text" autofocus autocomplete="username" aria-label="${msg('usernameOrEmail')}">
+                        <input tabindex="1" id="username" class="form-control" name="username" value="${login.username!}" type="text" autofocus autocomplete="username" aria-label="${msg('usernameOrEmail')}">
                     </div>
                     <div class="form-group" style="margin-top: 1rem;">
                         <label for="password">${msg("password","Senha")}</label>
